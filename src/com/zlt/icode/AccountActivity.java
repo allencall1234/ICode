@@ -3,6 +3,7 @@ package com.zlt.icode;
 import android.content.Intent;
 import android.content.SharedPreferences.Editor;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.EditText;
@@ -27,7 +28,7 @@ public class AccountActivity extends BaseActivity implements OnClickListener {
 		super.onCreate(savedInstanceState);
 		
 		changeUserInfo = getIntent().getBooleanExtra("changeUserInfo", false);
-		
+		Log.i("zlt", "打印 一个log");
 		setContentView(R.layout.account_info);
 		initView();
 	}
